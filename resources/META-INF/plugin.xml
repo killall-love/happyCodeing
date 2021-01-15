@@ -1,0 +1,55 @@
+<idea-plugin>
+    <id>com.xiaolan.happy.coding.tools</id>
+    <name>Happy Coding</name>
+    <version>1.1</version>
+    <vendor email="1347229508@qq.com" url="http://lan666.top">烟花小神</vendor>
+    <description><![CDATA[
+        关于作者<br>
+        作者：烟花小神 <br>
+        反馈：QQ: 1347229508  <br>
+        主要功效： <br>
+        1.SQL快速格式化 , 文本转驼峰命名。 <br>
+        2.Mapper 里面的 SQL 不好看？影响代码风格？; <br>
+        2.英文不好 属性，方法名 去翻译？ 然后复制粘贴改驼峰？; <br>
+        3.问题来了 怎么才能让SQL变优美？怎么才能简化驼峰命名？; <br>
+        4.他来了 他来了 他带着插件走来了; <br>
+        5.选中你要格式化的SQL<br>右键 'SQL-Format'<br>或者采用快捷键 alt shift K <br>
+        6.选中 属性/方法 <br>右键 'ConversionMethodAttributes'<br> 或者采用快捷键 alt shift H <br>
+        7.编码效率提升百分之好几十; <br>
+        8.产品经理终于可以下床了！
+    ]]></description>
+    <change-notes>
+        <![CDATA[
+        关于作者<br>
+        作者：烟花小神 <br>
+        反馈：QQ: 1347229508  <br>
+        主要功效： <br>
+        1.SQL快速格式化 , 文本转驼峰命名。 <br>
+        2.Mapper 里面的 SQL 不好看？影响代码风格？; <br>
+        2.英文不好 属性，方法名 去翻译？ 然后复制粘贴改驼峰？; <br>
+        3.问题来了 怎么才能让SQL变优美？怎么才能简化驼峰命名？; <br>
+        4.他来了 他来了 他带着插件走来了; <br>
+        5.选中你要格式化的SQL<br>右键 'SQL-Format'<br>或者采用快捷键 alt shift K <br>
+        6.选中 属性/方法 <br>右键 'ConversionMethodAttributes'<br> 或者采用快捷键 alt ctrl H <br>
+        7.编码效率提升百分之好几十; <br>
+        8.产品经理终于可以下床了！
+    ]]>
+    </change-notes>
+    <idea-version since-build="173.0"/>
+    <extensions defaultExtensionNs="com.intellij">
+    </extensions>
+    <actions>
+        <action id="FormatSqlDm" class="com.xiaolan.happy.coding.tools.sql.FormatSqlDm"
+                text="SQL-Format"
+                description="SQL-Format">
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="alt shift K"/>
+        </action>
+        <action id="ConversionMethodAttributes" class="com.xiaolan.happy.coding.tools.conversion.Conversion"
+                text="ConversionMethodAttributes"
+                description="ConversionMethodAttributes">
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="alt shift H"/>
+        </action>
+    </actions>
+</idea-plugin>
