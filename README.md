@@ -1,4 +1,4 @@
-# happCode
+# happyCodeing
 idea 快捷开发插件
 
     关于作者
